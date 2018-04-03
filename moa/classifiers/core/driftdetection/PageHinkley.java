@@ -1,21 +1,3 @@
-/*
- *    DDM.java
- *    Copyright (C) 2008 University of Waikato, Hamilton, New Zealand
- *    @author Manuel Baena (mbaena@lcc.uma.es)
- *
- *    This program is free software; you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License as published by
- *    the Free Software Foundation; either version 3 of the License, or
- *    (at your option) any later version.
- *
- *    This program is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU General Public License for more details.
- *
- *    You should have received a copy of the GNU General Public License
- *    along with this program. If not, see <http://www.gnu.org/licenses/>.
- */
 package moa.classifiers.core.driftdetection;
 
 import com.github.javacliparser.FloatOption;
@@ -23,13 +5,6 @@ import com.github.javacliparser.IntOption;
 import moa.core.ObjectRepository;
 import moa.tasks.TaskMonitor;
 
-/**
- * Drift detection method based in Page Hinkley Test.
- *
- *
- * @author Manuel Baena (mbaena@lcc.uma.es)
- * @version $Revision: 7 $
- */
 public class PageHinkley extends AbstractChangeDetector {
 
     private static final long serialVersionUID = -3518369648142099719L;
