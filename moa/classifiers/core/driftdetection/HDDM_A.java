@@ -1,7 +1,7 @@
 /*
  *    HDDM_A.java
- *
- *    @author Isvani Frias-Blanco (ifriasb@udg.co.cu)
+ *    @author Moana Stirling (msti689@aucklanduni.ac.nz)
+ *    Based heavily off work by Isvani Frias-Blanco (ifriasb@udg.co.cu)
  * 
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -25,26 +25,6 @@ import com.github.javacliparser.FloatOption;
 import com.github.javacliparser.MultiChoiceOption;
 import moa.core.ObjectRepository;
 import moa.tasks.TaskMonitor;
-
-/**
- * <p>Online drift detection method based on Hoeffding's bounds. 
- * HDDM<sub><i>A</i>-test</sub> uses the average as estimator.
- * It receives as input a stream of real values and returns the estimated status
- * of the stream: STABLE, WARNING or DRIFT.</p>
- *
- * <p>I. Frias-Blanco, J. del Campo-Avila, G. Ramos-Jimenez, R. Morales-Bueno, 
- * A. Ortiz-Diaz, and Y. Caballero-Mota, Online and non-parametric drift 
- * detection methods based on Hoeffding's bound, IEEE Transactions on Knowledge
- * and Data Engineering, 2014. DOI 10.1109/TKDE.2014.2345382.</p>
- *
- * <p>Parameters:</p> <ul> <li>-d : Confidence to the drift</li><li>-w : 
- * Confidence to the warning</li><li>-t : Option to monitor error increments and
- * decrements (two-sided) or only increments (one-sided)</li>
- * </ul>
- *
- * @author Isvani Frias-Blanco (ifriasb@udg.co.cu)
- *
- */
 
 public class HDDM_A extends AbstractChangeDetector {
     
