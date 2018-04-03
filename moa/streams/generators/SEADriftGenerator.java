@@ -1,22 +1,3 @@
-/*
- *    SEADriftGenerator.java
- *    Copyright (C) 2008 University of Waikato, Hamilton, New Zealand
- *    @author Albert Bifet (abifet at cs dot waikato dot ac dot nz)
- *
- *    This program is free software; you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License as published by
- *    the Free Software Foundation; either version 3 of the License, or
- *    (at your option) any later version.
- *
- *    This program is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU General Public License for more details.
- *
- *    You should have received a copy of the GNU General Public License
- *    along with this program. If not, see <http://www.gnu.org/licenses/>.
- *    
- */
 package moa.streams.generators;
 
 import com.yahoo.labs.samoa.instances.Attribute;
@@ -36,20 +17,6 @@ import com.github.javacliparser.IntOption;
 import moa.streams.InstanceStream;
 import moa.tasks.TaskMonitor;
 
-/**
- * Stream generator for SEA concepts functions.
- * Generator described in the paper:<br/>
- * W. Nick Street and YongSeog Kim
- *    "A streaming ensemble algorithm (SEA) for large-scale classification",
- *     KDD '01: Proceedings of the seventh ACM SIGKDD international conference on Knowledge discovery and data mining
- *     377-382 2001.<br/><br/>
- *
- * Notes:<br/>
- * The built in functions are based on the paper.
- *
- * @author Albert Bifet (abifet at cs dot waikato dot ac dot nz)
- * @version $Revision: 7 $
- */
 public class SEADriftGenerator extends AbstractOptionHandler implements
         InstanceStream {
 
