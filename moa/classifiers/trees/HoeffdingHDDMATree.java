@@ -1,22 +1,3 @@
-/*
- *    HoeffdingHDDMATree.java
- *    Copyright (C) 2008 University of Waikato, Hamilton, New Zealand
- *    @author Albert Bifet (abifet at cs dot waikato dot ac dot nz)
- *
- *    This program is free software; you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License as published by
- *    the Free Software Foundation; either version 3 of the License, or
- *    (at your option) any later version.
- *
- *    This program is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU General Public License for more details.
- *
- *    You should have received a copy of the GNU General Public License
- *    along with this program. If not, see <http://www.gnu.org/licenses/>.
- *    
- */
 package moa.classifiers.trees;
 
 import com.github.javacliparser.FloatOption;
@@ -33,25 +14,6 @@ import moa.core.Utils;
 import com.yahoo.labs.samoa.instances.Instance;
 import moa.core.Measurement;
 
-/**
- * Hoeffding Adaptive Tree for evolving data streams.
- *
- * <p>This adaptive Hoeffding Tree uses ADWIN to monitor performance of
- * branches on the tree and to replace them with new branches when their
- * accuracy decreases if the new branches are more accurate.</p>
- * See details in:</p>
- * <p>Adaptive Learning from Evolving Data Streams. Albert Bifet, Ricard Gavaldà.
- * IDA 2009</p>
- *
- * <ul>
- * <li> Same parameters as <code>HoeffdingTreeNBAdaptive</code></li>
- * <li> -l : Leaf prediction to use: MajorityClass (MC), Naive Bayes (NB) or NaiveBayes
- * adaptive (NBAdaptive).
- * </ul>
- *
- * @author Albert Bifet (abifet at cs dot waikato dot ac dot nz)
- * @version $Revision: 7 $
- */
 public class HoeffdingHDDMATree extends HoeffdingTree {
 
     int instanceCount = 0;
