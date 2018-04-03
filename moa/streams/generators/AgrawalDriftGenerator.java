@@ -1,22 +1,3 @@
-/*
- *    AgrawalDriftGenerator.java
- *    Copyright (C) 2007 University of Waikato, Hamilton, New Zealand
- *    @author Richard Kirkby (rkirkby@cs.waikato.ac.nz)
- *
- *    This program is free software; you can redistribute it and/or modify
- *    it under the terms of the GNU General Public License as published by
- *    the Free Software Foundation; either version 3 of the License, or
- *    (at your option) any later version.
- *
- *    This program is distributed in the hope that it will be useful,
- *    but WITHOUT ANY WARRANTY; without even the implied warranty of
- *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *    GNU General Public License for more details.
- *
- *    You should have received a copy of the GNU General Public License
- *    along with this program. If not, see <http://www.gnu.org/licenses/>.
- *    
- */
 package moa.streams.generators;
 
 import com.yahoo.labs.samoa.instances.Attribute;
@@ -39,26 +20,6 @@ import moa.streams.ExampleStream;
 import moa.streams.InstanceStream;
 import moa.tasks.TaskMonitor;
 
-/**
- * Stream generator for Agrawal dataset.
- * Generator described in paper:<br/>
- *   Rakesh Agrawal, Tomasz Imielinksi, and Arun Swami,
- *    "Database Mining: A Performance Perspective",
- *     IEEE Transactions on Knowledge and Data Engineering,
- *      5(6), December 1993. <br/><br/>
- * 
- * Public C source code available at:<br/>
- *   <a href="http://www.almaden.ibm.com/cs/projects/iis/hdb/Projects/data_mining/datasets/syndata.html">
- * http://www.almaden.ibm.com/cs/projects/iis/hdb/Projects/data_mining/datasets/syndata.html</a><br/><br/>
- *
- * Notes:<br/>
- * The built in functions are based on the paper (page 924),
- *  which turn out to be functions pred20 thru pred29 in the public C implementation.
- * Perturbation function works like C implementation rather than description in paper.
- * 
- * @author Richard Kirkby (rkirkby@cs.waikato.ac.nz)
- * @version $Revision: 7 $
- */
 public class AgrawalDriftGenerator extends AbstractOptionHandler implements
         InstanceStream {
 
